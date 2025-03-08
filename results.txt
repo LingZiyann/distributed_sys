@@ -1,0 +1,82 @@
+General Data
+
+data_received:
+21 kB – Total data received by all virtual users during the test.
+2.1 kB/s – Average rate at which data was received (on a per-second basis).
+
+
+data_sent:
+800 B – Total data sent by the virtual users during the test.
+80 B/s – Average rate at which data was sent (on a per-second basis).
+
+
+HTTP Request Timings
+These stats describe how long different stages of the HTTP request took.
+
+http_req_blocked: Time spent waiting for a connection to be available before making the request.
+avg=500.05µs: Average time spent in this stage.
+min=0s, max=5ms: The minimum was 0 seconds (no wait), the maximum was 5 milliseconds.
+p(90)=500.04µs: 90% of the requests had a http_req_blocked time less than or equal to 500.04 microseconds.
+p(95)=2.75ms: 95% of requests had a http_req_blocked time less than or equal to 2.75 milliseconds.
+
+
+http_req_connecting: Time spent on the TCP handshake or establishing a connection.
+
+avg=0s: This means the connection was established instantly or no connection delay was observed.
+min=0s, max=0s: No variation in connection time.
+p(90)=0s, p(95)=0s: 90% and 95% of the requests had no connection delay.
+
+
+http_req_duration: Total time taken to complete an HTTP request (from start to finish, including DNS lookup, connection time, and response).
+
+avg=1ms: On average, each HTTP request took 1 millisecond to complete.
+min=0s, max=1.3ms: The minimum was instantaneous (0 seconds), the maximum was 1.3 milliseconds.
+p(90)=1.28ms: 90% of the requests had a duration of 1.28 milliseconds or less.
+p(95)=1.29ms: 95% of the requests had a duration of 1.29 milliseconds or less.
+
+
+Other HTTP Timings
+http_req_receiving: Time spent receiving the response from the server.
+
+avg=356.33µs: Average time spent receiving data.
+min=0s, max=1.02ms: The minimum was 0 seconds (instant), the maximum was 1.02 milliseconds.
+p(90)=805.08µs: 90% of the requests had a http_req_receiving time of 805.08 microseconds or less.
+p(95)=916.19µs: 95% of the requests had a http_req_receiving time of 916.19 microseconds or less.
+
+
+http_req_sending: Time spent sending the request to the server.
+avg=0s: No significant sending time.
+min=0s, max=0s: No variation in sending time (probably negligible or instant).
+http_req_tls_handshaking: Time spent on the SSL/TLS handshake for HTTPS requests.
+
+avg=0s: No TLS handshake time observed.
+min=0s, max=0s: No handshake time observed.
+Request Counts and Performance
+
+
+http_reqs: Total number of HTTP requests made during the test.
+
+10: A total of 10 requests were made.
+0.997721/s: An average of approximately 1 request per second was made during the test.
+
+
+iteration_duration: The time taken to complete each iteration (i.e., each time the virtual user makes a request).
+
+avg=1s: On average, each iteration took 1 second.
+min=1s, max=1s: All iterations had the same duration of 1 second.
+p(90)=1s, p(95)=1s: 90% and 95% of iterations took 1 second or less.
+
+
+iterations: The total number of iterations (a virtual user performing a test cycle).
+10: A total of 10 iterations were completed.
+0.997721/s: Virtual users were completing iterations at approximately 1 iteration per second.
+
+
+Virtual User Stats
+vus: The number of virtual users (VUs) currently active in the test.
+
+
+1: Only 1 virtual user was active during this test.
+min=1, max=1: The number of VUs was constant at 1 throughout the test.
+vus_max: The maximum number of virtual users.
+1: This was the maximum number of virtual users at any point during the test.
